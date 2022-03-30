@@ -1,0 +1,38 @@
+.footer{
+  &__card{
+    padding: 50px 0;
+    border: 0;
+
+  }
+  img{
+    width: 243px;
+  }
+  &__info{
+    margin-left: 150px;
+
+    .footer__title{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      color: #E2E2E2;
+    }
+    .footer__text{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      /* Color/White */
+      color: #FFFFFF;
+    }
+  }
+  &__rights{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #B9B9B9;
+  }
+}

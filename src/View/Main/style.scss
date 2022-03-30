@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.main__carousel {
+  margin: 11px 0 60px;
+}
+
+.main{
+  margin: 50px 0;
+  .main__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #393939;
+  }
+  .main__card{
+    margin: 15px 5px;
+    max-width: 280px;
+  }
+  .card_title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: justify;
+
+    /* Text color/Primary */
+
+    color: #393939;
+  }
+  .card_price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    /* Text color/Primary */
+
+    color: #393939;
+    .old_price{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: flex-end;
+      text-align: justify;
+      text-decoration-line: line-through;
+
+      color: #ADADAD;
+    }
+  }
+  .card_info{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: justify;
+
+    /* Gray */
+
+    color: #7C7C7C;
+  }
+  .more_btn{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 8px 39px;
+    margin: 25px auto;
+    display: block;
+    text-align: center;
+  }
+}
+.novelty{
+  margin: 50px 0;
+}
+.collection{
+  margin: 50px 0;
+  position: relative;
+  &__card{
+    border: none;
+    height: 375px;
+    img{
+
+
+    }
+  }
+  &__title{
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    bottom: 55px;
+    z-index: 1;
+
+    /* White */
+    color: #FFFFFF;
+  }
+
+  &__footer{
+    background: #000;
+
+    .text-muted{
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+  }
+  &__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 15px 0 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+  &__svg{
+    padding: 15px 0;
+  }
+
+}
+
+.advantages{
+  &__card{
+    display: inline-block;
+    text-align: center;
+  }
+  &__svg{
+    margin: 26px 0;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    /* Text color/Primary */
+
+    color: #393939;
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    /* or 24px */
+
+    letter-spacing: 0.04em;
+
+    /* Text color/Gray */
+
+    color: #979797;
+  }
+}
