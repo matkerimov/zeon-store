@@ -3,478 +3,488 @@ import './style.css'
 import sale_img from '../Main/img/image 3 (2).png'
 import card_img from '../Main/img/Rectangle 491.png'
 import collection_img from '../Main/img/collection.png'
-import {Button, Card, CardGroup} from 'react-bootstrap';
+import {Breadcrumb, Button, Card, CardGroup} from 'react-bootstrap';
 
 const Main = () => {
     return (
-        <div className=" container bg-grey">
-            <div className="main__carousel">
-                <img className="main__carousel__img" src={sale_img} alt="sale_img"/>
-            </div>
+        <div className=" container " >
+            <Breadcrumb>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="/collections">
+                    Коллекции
+                </Breadcrumb.Item>
+                <Breadcrumb.Item active>Data</Breadcrumb.Item>
+            </Breadcrumb>
 
-            <section className="main">
-                <h4 className="main__title">Хит продаж</h4>
-                <CardGroup style={{width: "100%"}}>
+        <div >
 
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Text className="card_info">
-                                Размер: 42-50
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                <div className="main__carousel">
+                    <img className="main__carousel__img" src={sale_img} alt="sale_img"/>
+                </div>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                <section className="main">
+                    <h4 className="main__title">Хит продаж</h4>
+                    <CardGroup className="d-flex justify-content-evenly">
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Text className="card_info">
+                                    Размер: 42-50
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted"x>
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                </CardGroup>
-                <CardGroup>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
-
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
-
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
-
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
-
-                            </small>
-                        </Card.Footer>
-                    </Card>
+                                </small>
+                            </Card.Footer>
+                        </Card>
 
 
-                </CardGroup>
-                <Button variant="dark" className="more_btn ">Еще</Button>
-            </section>
-            <section className="novelty main ">
-                <h4 className="main__title">Новинки</h4>
-                <CardGroup style={{width: "100%"}}>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                    </CardGroup>
+                    <CardGroup>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card">
-                        <Card.Img variant="top" src={card_img}/>
-                        <Card.Body>
-                            <Card.Text className="card__title">Вечернее платье</Card.Text>
-                            <Card.Title className="cart_price">
-                                1 365 р
-                            </Card.Title>
-                            <Card.Title className="card_info">
-                                Размер: 42-50
-                            </Card.Title>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">
-                                <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
-                                    <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
-                                    <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
-                                    <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
-                                    <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
-                                    <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
-                                          stroke="#D1D1D1"/>
-                                    <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
-                                    <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
-                                </svg>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
+                                </small>
+                            </Card.Footer>
+                        </Card>
 
 
-                </CardGroup>
-                <Button variant="dark" className="more_btn ">Еще</Button>
-            </section>
-            <section className="collections main">
-                <h4 className="main__title">Коллекция</h4>
-                <CardGroup >
-                    <Card className="main__card collection__card">
-                        <Card.Img variant="top" src={collection_img}/>
-                        {/*<Card.Body>*/}
+                    </CardGroup>
+                    <Button variant="dark" className="more_btn ">Еще</Button>
+                </section>
+                <section className="novelty main ">
+                    <h4 className="main__title">Новинки</h4>
+                    <CardGroup style={{width: "100%"}}>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
+
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
+
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
+
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card">
+                            <Card.Img variant="top" src={card_img}/>
+                            <Card.Body>
+                                <Card.Text className="card__title">Вечернее платье</Card.Text>
+                                <Card.Title className="cart_price">
+                                    1 365 р
+                                </Card.Title>
+                                <Card.Title className="card_info">
+                                    Размер: 42-50
+                                </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">
+                                    <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+                                        <rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+                                        <rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+                                        <rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+                                        <rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+                                        <rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white"
+                                              stroke="#D1D1D1"/>
+                                        <rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+                                        <rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+                                    </svg>
+
+                                </small>
+                            </Card.Footer>
+                        </Card>
+
+
+                    </CardGroup>
+                    <Button variant="dark" className="more_btn ">Еще</Button>
+                </section>
+                <section className="collections main">
+                    <h4 className="main__title">Коллекция</h4>
+                    <CardGroup >
+                        <Card className="main__card collection__card">
+                            <Card.Img variant="top" src={collection_img}/>
+                            {/*<Card.Body>*/}
                             <Card.Text className="collection__title">Повседневная одежда</Card.Text>
 
-                        {/*</Card.Body>*/}
-                        <Card.Footer  className="collection__footer">
-                            <small className="text-muted">
-                                <Card.Text className="collection__text">
-                                    Смотреть все
-                                </Card.Text>
-                                <span className="collection_svg">
+                            {/*</Card.Body>*/}
+                            <Card.Footer  className="collection__footer">
+                                <small className="text-muted">
+                                    <Card.Text className="collection__text">
+                                        Смотреть все
+                                    </Card.Text>
+                                    <span className="collection_svg">
                                     <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.2517 8.42698L1.94666 0.487183C1.61557 0.170939 1.07941 0.170939 0.74832 0.487183C0.417227 0.803703 0.417227 1.31681 0.74832 1.63305L8.45417 9.00001L0.74832 16.367C0.417227 16.6833 0.417227 17.1964 0.74832 17.5126C0.913866 17.6709 1.13053 17.75 1.34749 17.75C1.56444 17.75 1.78111 17.6709 1.94666 17.5126L10.2517 9.57285C10.5828 9.25633 10.5828 8.74319 10.2517 8.42698Z" fill="white"/>
 </svg>
 
                                 </span>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card collection__card">
-                        <Card.Img variant="top" src={collection_img}/>
-                        {/*<Card.Body>*/}
-                        <Card.Text className="collection__title">Повседневная одежда</Card.Text>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card collection__card">
+                            <Card.Img variant="top" src={collection_img}/>
+                            {/*<Card.Body>*/}
+                            <Card.Text className="collection__title">Повседневная одежда</Card.Text>
 
-                        {/*</Card.Body>*/}
-                        <Card.Footer  className="collection__footer">
-                            <small className="text-muted">
-                                <Card.Text className="collection__text">
-                                    Смотреть все
-                                </Card.Text>
-                                <span className="collection_svg">
+                            {/*</Card.Body>*/}
+                            <Card.Footer  className="collection__footer">
+                                <small className="text-muted">
+                                    <Card.Text className="collection__text">
+                                        Смотреть все
+                                    </Card.Text>
+                                    <span className="collection_svg">
                                     <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.2517 8.42698L1.94666 0.487183C1.61557 0.170939 1.07941 0.170939 0.74832 0.487183C0.417227 0.803703 0.417227 1.31681 0.74832 1.63305L8.45417 9.00001L0.74832 16.367C0.417227 16.6833 0.417227 17.1964 0.74832 17.5126C0.913866 17.6709 1.13053 17.75 1.34749 17.75C1.56444 17.75 1.78111 17.6709 1.94666 17.5126L10.2517 9.57285C10.5828 9.25633 10.5828 8.74319 10.2517 8.42698Z" fill="white"/>
 </svg>
 
                                 </span>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card collection__card">
-                        <Card.Img variant="top" src={collection_img}/>
-                        {/*<Card.Body>*/}
-                        <Card.Text className="collection__title">Повседневная одежда</Card.Text>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card collection__card">
+                            <Card.Img variant="top" src={collection_img}/>
+                            {/*<Card.Body>*/}
+                            <Card.Text className="collection__title">Повседневная одежда</Card.Text>
 
-                        {/*</Card.Body>*/}
-                        <Card.Footer  className="collection__footer">
-                            <small className="text-muted">
-                                <Card.Text className="collection__text">
-                                    Смотреть все
-                                </Card.Text>
-                                <span className="collection_svg">
+                            {/*</Card.Body>*/}
+                            <Card.Footer  className="collection__footer">
+                                <small className="text-muted">
+                                    <Card.Text className="collection__text">
+                                        Смотреть все
+                                    </Card.Text>
+                                    <span className="collection_svg">
                                     <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.2517 8.42698L1.94666 0.487183C1.61557 0.170939 1.07941 0.170939 0.74832 0.487183C0.417227 0.803703 0.417227 1.31681 0.74832 1.63305L8.45417 9.00001L0.74832 16.367C0.417227 16.6833 0.417227 17.1964 0.74832 17.5126C0.913866 17.6709 1.13053 17.75 1.34749 17.75C1.56444 17.75 1.78111 17.6709 1.94666 17.5126L10.2517 9.57285C10.5828 9.25633 10.5828 8.74319 10.2517 8.42698Z" fill="white"/>
 </svg>
 
                                 </span>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="main__card collection__card">
-                        <Card.Img variant="top" src={collection_img}/>
-                        {/*<Card.Body>*/}
-                        <Card.Text className="collection__title">Повседневная одежда</Card.Text>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="main__card collection__card">
+                            <Card.Img variant="top" src={collection_img}/>
+                            {/*<Card.Body>*/}
+                            <Card.Text className="collection__title">Повседневная одежда</Card.Text>
 
-                        {/*</Card.Body>*/}
-                        <Card.Footer  className="collection__footer">
-                            <small className="text-muted">
-                                <Card.Text className="collection__text">
-                                    Смотреть все
-                                </Card.Text>
-                                <span className="collection_svg">
+                            {/*</Card.Body>*/}
+                            <Card.Footer  className="collection__footer">
+                                <small className="text-muted">
+                                    <Card.Text className="collection__text">
+                                        Смотреть все
+                                    </Card.Text>
+                                    <span className="collection_svg">
                                     <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.2517 8.42698L1.94666 0.487183C1.61557 0.170939 1.07941 0.170939 0.74832 0.487183C0.417227 0.803703 0.417227 1.31681 0.74832 1.63305L8.45417 9.00001L0.74832 16.367C0.417227 16.6833 0.417227 17.1964 0.74832 17.5126C0.913866 17.6709 1.13053 17.75 1.34749 17.75C1.56444 17.75 1.78111 17.6709 1.94666 17.5126L10.2517 9.57285C10.5828 9.25633 10.5828 8.74319 10.2517 8.42698Z" fill="white"/>
 </svg>
 
                                 </span>
 
-                            </small>
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
-            </section>
-            <section className="advantages main">
-                <h4 className="main__title">Наши преимущества</h4>
-                <cardGroup>
-                    <Card className="main__card advantages__card py-3">
-                        <Card.Body style={{padding: "none"}}>
+                                </small>
+                            </Card.Footer>
+                        </Card>
+                    </CardGroup >
+                </section>
+                <section className="advantages main">
+                    <h4 className="main__title">Наши преимущества</h4>
+                    <div>
+                        <Card className="main__card advantages__card py-3">
+                            <Card.Body style={{padding: "none"}}>
                             <span className="advantages__svg ">
                                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.6473 30.9187C35.5178 30.8907 35.3849 30.8856 35.2537 30.9052C33.939 30.7522 32.9472 29.6399 32.945 28.3167C32.945 27.6827 32.4308 27.1685 31.7968 27.1685C31.1627 27.1685 30.6486 27.6827 30.6486 28.3167C30.6519 30.5262 32.1298 32.4616 34.2602 33.0463V34.1946C34.2602 34.8286 34.7743 35.3428 35.4084 35.3428C36.0425 35.3428 36.5566 34.8286 36.5566 34.1946V33.1159C39.0156 32.6012 40.6869 30.311 40.4285 27.8122C40.1694 25.3134 38.0642 23.4145 35.552 23.4139C34.1122 23.4139 32.945 22.2466 32.945 20.8069C32.945 19.3672 34.1122 18.1999 35.552 18.1999C36.9917 18.1999 38.159 19.3672 38.159 20.8069C38.159 21.441 38.6731 21.9551 39.3072 21.9551C39.9413 21.9551 40.4554 21.441 40.4554 20.8069C40.452 18.4869 38.8267 16.486 36.5566 16.0072V14.9622C36.5566 14.3281 36.0425 13.814 35.4084 13.814C34.7743 13.814 34.2602 14.3281 34.2602 14.9622V16.0773C31.8909 16.7243 30.366 19.0246 30.6923 21.4589C31.0186 23.8933 33.0958 25.7103 35.552 25.7097C36.9726 25.7097 38.1315 26.8473 38.1573 28.2674C38.1836 29.6875 37.0668 30.8671 35.6473 30.9187Z" fill="#1D1D1B"/>
@@ -483,13 +493,13 @@ const Main = () => {
 </svg>
 
                             </span>
-                            <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
-                            <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
+                                <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
+                                <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
 
-                        </Card.Body>
-                    </Card>
-                    <Card className="main__card advantages__card py-3">
-                        <Card.Body style={{padding: "none"}}>
+                            </Card.Body>
+                        </Card>
+                        <Card className="main__card advantages__card py-3">
+                            <Card.Body style={{padding: "none"}}>
                             <span className="advantages__svg ">
                                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.6473 30.9187C35.5178 30.8907 35.3849 30.8856 35.2537 30.9052C33.939 30.7522 32.9472 29.6399 32.945 28.3167C32.945 27.6827 32.4308 27.1685 31.7968 27.1685C31.1627 27.1685 30.6486 27.6827 30.6486 28.3167C30.6519 30.5262 32.1298 32.4616 34.2602 33.0463V34.1946C34.2602 34.8286 34.7743 35.3428 35.4084 35.3428C36.0425 35.3428 36.5566 34.8286 36.5566 34.1946V33.1159C39.0156 32.6012 40.6869 30.311 40.4285 27.8122C40.1694 25.3134 38.0642 23.4145 35.552 23.4139C34.1122 23.4139 32.945 22.2466 32.945 20.8069C32.945 19.3672 34.1122 18.1999 35.552 18.1999C36.9917 18.1999 38.159 19.3672 38.159 20.8069C38.159 21.441 38.6731 21.9551 39.3072 21.9551C39.9413 21.9551 40.4554 21.441 40.4554 20.8069C40.452 18.4869 38.8267 16.486 36.5566 16.0072V14.9622C36.5566 14.3281 36.0425 13.814 35.4084 13.814C34.7743 13.814 34.2602 14.3281 34.2602 14.9622V16.0773C31.8909 16.7243 30.366 19.0246 30.6923 21.4589C31.0186 23.8933 33.0958 25.7103 35.552 25.7097C36.9726 25.7097 38.1315 26.8473 38.1573 28.2674C38.1836 29.6875 37.0668 30.8671 35.6473 30.9187Z" fill="#1D1D1B"/>
@@ -498,13 +508,13 @@ const Main = () => {
 </svg>
 
                             </span>
-                            <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
-                            <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
+                                <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
+                                <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
 
-                        </Card.Body>
-                    </Card>
-                    <Card className="main__card advantages__card py-3">
-                        <Card.Body style={{padding: "none"}}>
+                            </Card.Body>
+                        </Card>
+                        <Card className="main__card advantages__card py-3">
+                            <Card.Body style={{padding: "none"}}>
                             <span className="advantages__svg ">
                                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.6473 30.9187C35.5178 30.8907 35.3849 30.8856 35.2537 30.9052C33.939 30.7522 32.9472 29.6399 32.945 28.3167C32.945 27.6827 32.4308 27.1685 31.7968 27.1685C31.1627 27.1685 30.6486 27.6827 30.6486 28.3167C30.6519 30.5262 32.1298 32.4616 34.2602 33.0463V34.1946C34.2602 34.8286 34.7743 35.3428 35.4084 35.3428C36.0425 35.3428 36.5566 34.8286 36.5566 34.1946V33.1159C39.0156 32.6012 40.6869 30.311 40.4285 27.8122C40.1694 25.3134 38.0642 23.4145 35.552 23.4139C34.1122 23.4139 32.945 22.2466 32.945 20.8069C32.945 19.3672 34.1122 18.1999 35.552 18.1999C36.9917 18.1999 38.159 19.3672 38.159 20.8069C38.159 21.441 38.6731 21.9551 39.3072 21.9551C39.9413 21.9551 40.4554 21.441 40.4554 20.8069C40.452 18.4869 38.8267 16.486 36.5566 16.0072V14.9622C36.5566 14.3281 36.0425 13.814 35.4084 13.814C34.7743 13.814 34.2602 14.3281 34.2602 14.9622V16.0773C31.8909 16.7243 30.366 19.0246 30.6923 21.4589C31.0186 23.8933 33.0958 25.7103 35.552 25.7097C36.9726 25.7097 38.1315 26.8473 38.1573 28.2674C38.1836 29.6875 37.0668 30.8671 35.6473 30.9187Z" fill="#1D1D1B"/>
@@ -513,13 +523,13 @@ const Main = () => {
 </svg>
 
                             </span>
-                            <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
-                            <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
+                                <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
+                                <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
 
-                        </Card.Body>
-                    </Card>
-                    <Card className="main__card advantages__card py-3">
-                        <Card.Body style={{padding: "none"}}>
+                            </Card.Body>
+                        </Card>
+                        <Card className="main__card advantages__card py-3">
+                            <Card.Body style={{padding: "none"}}>
                             <span className="advantages__svg ">
                                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.6473 30.9187C35.5178 30.8907 35.3849 30.8856 35.2537 30.9052C33.939 30.7522 32.9472 29.6399 32.945 28.3167C32.945 27.6827 32.4308 27.1685 31.7968 27.1685C31.1627 27.1685 30.6486 27.6827 30.6486 28.3167C30.6519 30.5262 32.1298 32.4616 34.2602 33.0463V34.1946C34.2602 34.8286 34.7743 35.3428 35.4084 35.3428C36.0425 35.3428 36.5566 34.8286 36.5566 34.1946V33.1159C39.0156 32.6012 40.6869 30.311 40.4285 27.8122C40.1694 25.3134 38.0642 23.4145 35.552 23.4139C34.1122 23.4139 32.945 22.2466 32.945 20.8069C32.945 19.3672 34.1122 18.1999 35.552 18.1999C36.9917 18.1999 38.159 19.3672 38.159 20.8069C38.159 21.441 38.6731 21.9551 39.3072 21.9551C39.9413 21.9551 40.4554 21.441 40.4554 20.8069C40.452 18.4869 38.8267 16.486 36.5566 16.0072V14.9622C36.5566 14.3281 36.0425 13.814 35.4084 13.814C34.7743 13.814 34.2602 14.3281 34.2602 14.9622V16.0773C31.8909 16.7243 30.366 19.0246 30.6923 21.4589C31.0186 23.8933 33.0958 25.7103 35.552 25.7097C36.9726 25.7097 38.1315 26.8473 38.1573 28.2674C38.1836 29.6875 37.0668 30.8671 35.6473 30.9187Z" fill="#1D1D1B"/>
@@ -528,14 +538,17 @@ const Main = () => {
 </svg>
 
                             </span>
-                            <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
-                            <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
+                                <Card.Title className="advantages__title mt-4">Удобные способы оплаты</Card.Title>
+                                <Card.Subtitle className="advantages__subtitle text-muted mt-2">Мы предлагаем возможность безналичной оплаты</Card.Subtitle>
 
-                        </Card.Body>
-                    </Card>
+                            </Card.Body>
+                        </Card>
 
-                </cardGroup>
-            </section>
+                    </div>
+                </section>
+            </div>
+
+
         </div>
     );
 };

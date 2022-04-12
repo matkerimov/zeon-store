@@ -2,14 +2,14 @@ import React from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 
-const Index = ({children}) => {
+const Layout = ({children}) => {
     return (
         <>
             <Header/>
-            {children}
+            {children }
             <Footer/>
         </>
     );
 };
 
-export default Index;
+export default Layout;

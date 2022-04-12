@@ -1,0 +1,33 @@
+.collections{
+
+  &__card{
+    position: relative;
+    display: inline-block;
+
+    border: none;
+    padding: 0;
+    margin: 18px 2px;
+
+  }
+  &__img{
+    border: none;
+  }
+  &__body{
+    background: #000;
+    text-align: center;
+
+  }
+  &__title{
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    top: 300px;
+  }
+  &__text{
+    text-align: center;
+    border-radius: 0;
+    color: #FFFFFF;
+  }
+
+}

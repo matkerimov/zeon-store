@@ -1,26 +1,36 @@
-div {
+p {
   margin: 0;
 }
 
-.nav__link {
+.nav {
+  margin: 22px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav__right-side {
   display: flex;
+  align-items: center;
 }
 .nav__item {
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
   color: #393939;
-  padding-left: 24px;
+  margin-right: 24px;
 }
-.nav__item span {
-  padding-right: 6px;
+.nav__contact {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
   color: #979797;
+}
+.nav__contact span {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #393939;
 }
 
 .menu__header {

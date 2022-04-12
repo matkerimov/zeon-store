@@ -1,0 +1,16 @@
+.publicOffer{
+  padding: 11px 0 ;
+  height: max-content;
+  &__card{
+    margin-top: 18px;
+    background: #FFFFFF;
+    padding: 16px;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 165%;
+    color: #5B5B5B;
+    z-index: auto;
+  }
+}

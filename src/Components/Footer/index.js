@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Card} from "react-bootstrap";
 import footer_logo from "./img/Vector (4).png"
 import "./style.css"
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -13,7 +14,9 @@ const Footer = () => {
                         <Card.Title className="footer__title">Компания</Card.Title>
                         <Card.Text className="footer__text">О нас</Card.Text>
                         <Card.Text className="footer__text">Новости</Card.Text>
-                        <Card.Text className="footer__text">Помощь</Card.Text>
+                        <Link to="/help">
+                            <Card.Text className="footer__text">Помощь</Card.Text>
+                        </Link>
                     </div>
 
                     <div className="footer__info">
