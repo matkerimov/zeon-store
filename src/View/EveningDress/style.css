@@ -1,0 +1,100 @@
+.evening_dress .top_section .top__img {
+  box-sizing: border-box;
+  width: 308px;
+  height: 492px;
+  object-fit: cover;
+  margin: 4px;
+}
+.evening_dress .low__img {
+  object-fit: cover;
+  width: 150px;
+  height: 240px;
+  margin: 4px;
+}
+.evening_dress .col__card {
+  width: 520px;
+  height: 434px;
+}
+.evening_dress .col__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* Text color/Primary */
+  color: #393939;
+}
+.evening_dress .col__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1D1D1B;
+  margin: 21px 0 16px 0;
+}
+.evening_dress .col__subtitle span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #393939;
+}
+.evening_dress .col__color {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1D1D1B;
+}
+.evening_dress .col__price {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 20px 0 20px 0;
+  color: #393939;
+}
+.evening_dress .col__price span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: #979797;
+}
+.evening_dress .col__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #393939;
+}
+.evening_dress .col__info span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  margin: 6px 0 16px 0;
+  color: #6A6A6A;
+}
+.evening_dress .about_card {
+  display: flex;
+}
+.evening_dress .about_top {
+  margin-right: 62px;
+}
+.evening_dress .col__about {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1D1D1B;
+  margin-bottom: 14px;
+}
+.evening_dress .col__about span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1D1D1B;
+}
+.evening_dress .btn_trash {
+  width: 428px;
+  margin-right: 8px;
+  text-align: center;
+}
+.evening_dress .btn_trash span {
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

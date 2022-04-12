@@ -1,0 +1,35 @@
+.news {
+  padding: 11px 0;
+}
+.news__card {
+  margin-top: 34px;
+  padding: 16px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news__body {
+  display: inline-block;
+  margin-left: 16px;
+}
+.news__img {
+  width: 226px;
+  height: 226px;
+}
+.news__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #393939;
+  margin-bottom: 6px;
+}
+.news__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 165%;
+  /* or 23px */
+  color: #5B5B5B;
+}
+
+/*# sourceMappingURL=style.css.map */

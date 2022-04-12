@@ -1,0 +1,28 @@
+.collections__card {
+  position: relative;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 18px 2px;
+}
+.collections__img {
+  border: none;
+}
+.collections__body {
+  background: #000;
+  text-align: center;
+}
+.collections__title {
+  position: absolute;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  top: 300px;
+}
+.collections__text {
+  text-align: center;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
