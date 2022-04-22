@@ -1,33 +1,67 @@
 .collections{
+  position: relative;
 
+  .media{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+}
   &__card{
-    position: relative;
-    display: inline-block;
-
+    transition: .5s;
     border: none;
-    padding: 0;
     margin: 18px 2px;
+    max-width: 280px;
+    img{
+      height: 330px;
+      object-fit: cover;
+    }
+  }
 
-  }
-  &__img{
-    border: none;
-  }
-  &__body{
-    background: #000;
-    text-align: center;
+  &__card:hover{
+    box-shadow: 0 5px 8px 5px rgba(33,33,33,.2);
 
+    .collections__footer{
+
+      background: #FFFFFF;
+    }
+    .collections__text{
+      color: black;
+      span{
+        color: black;
+      }
+    }
   }
+
+
   &__title{
     position: absolute;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    top: 300px;
-  }
-  &__text{
+    width: 100%;
     text-align: center;
-    border-radius: 0;
+    bottom: 55px;
+    z-index: 1;
     color: #FFFFFF;
   }
+  &__footer{
+    transition: .5s;
+    background: #000;
+    padding: 13px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+    span{
+     padding-left: 15px;
+
+    }
+  }
+
+
 
 }

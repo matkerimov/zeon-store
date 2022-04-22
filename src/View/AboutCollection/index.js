@@ -1,109 +1,357 @@
-import React, {useEffect, useState} from 'react';
-import {Card, Carousel,} from "react-bootstrap";
+import React from 'react';
+import { Card, } from "react-bootstrap";
 import collectionSummer from "../Collection2020/img/Rectangle 491 (1).png"
 import collectionNovelty from "../Collection2020/img/Rectangle 353.png"
 import "./style.css"
 import Pagination from "../../Components/Pagination";
 import {Link} from "react-router-dom";
-import axios from "axios";
 
 
-const Collection2020 = () => {
-
-    const [products, setProducts] = useState([])
-
-
-    useEffect(() => {
-        axios(`https://613cea45270b96001798b2e8.mockapi.io/api/product`)
-            .then(({data}) => {
-                setProducts(data)
-            })
-    }, [])
-
-
+const AboutCollection = () => {
     return (
-        <div className="container aboutCollection">
-            <div className=" main">
-                <h4>О Коллекции</h4>
-                <div className="media">
-                    {
-                        products.map(item => {
-                            return (
-                                <div  key={item.id}>
-                                    <Link to="/about_dress">
-                                        <Card item={item} className="main__card">
-                                            <Carousel fade>
-                                                {
-                                                    item?.images?.map(el =>{
-                                                        return (
+        <div className="container">
+            <h4>Коллекция Лето 2020</h4>
+            <div className="summer">
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
-                                                            <Carousel.Item>
-                                                                <Card.Img variant="top" src={el}/>
+                        </span>
+                        </Card.Body>
 
-                                                            </Carousel.Item>
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
+                        </span>
+                        </Card.Body>
 
-                                                        )
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
+                        </span>
+                        </Card.Body>
 
-                                                    })
-                                                }
-                                            </Carousel>
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
-                                            <Card.Body>
-                                                <p className="card_title">{item.title}</p>
-                                                <p className="card_price">
-                                                    {item.price} p
-                                                </p>
-                                                <p className="card_info">
-                                                    Размер: {item.size}
-                                                </p>
-                                                <div>
-                                                    <small className="text-muted">
-                                                        <svg width="162" height="16" viewBox="0 0 162 16" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <rect opacity="0.47" y="4" width="8" height="8" rx="4"
-                                                                  fill="#73A39D"/>
-                                                            <rect opacity="0.47" x="20.8574" y="4" width="8" height="8"
-                                                                  rx="4"
-                                                                  fill="#84CC4C"/>
-                                                            <rect x="45.7148" y="4" width="8" height="8" rx="4"
-                                                                  fill="#B5A8A1"/>
-                                                            <rect x="70.5723" y="4" width="8" height="8" rx="4"
-                                                                  fill="#AB844A"/>
-                                                            <rect opacity="0.47" x="91.4277" y="4" width="8" height="8"
-                                                                  rx="4"
-                                                                  fill="#6977F0"/>
-                                                            <rect opacity="0.47" x="111.785" y="3.5" width="9"
-                                                                  height="9" rx="4.5"
-                                                                  fill="white"
-                                                                  stroke="#D1D1D1"/>
-                                                            <rect opacity="0.47" x="133.143" y="4" width="8" height="8"
-                                                                  rx="4"
-                                                                  fill="#141414"/>
-                                                            <rect opacity="0.47" x="154" y="4" width="8" height="8"
-                                                                  rx="4" fill="#FF0000"/>
-                                                        </svg>
+                        </span>
+                        </Card.Body>
 
-                                                    </small>
-                                                </div>
-                                            </Card.Body>
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
-                                        </Card>
+                        </span>
+                        </Card.Body>
 
-                                    </Link>
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
-                                </div>
-                            )
-                        })
-                    }
+                        </span>
+                        </Card.Body>
 
-                </div>
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
-                <Pagination />
+                        </span>
+                        </Card.Body>
 
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
 
+                        </span>
+                        </Card.Body>
+
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
+
+                        </span>
+                        </Card.Body>
+
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
+
+                        </span>
+                        </Card.Body>
+
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
+
+                        </span>
+                        </Card.Body>
+
+                    </Link>
+                </Card>
+                <Card style={{ width: '18rem' }} className="summer__card">
+                    <Card.Img variant="top" src={collectionSummer} />
+                    <Link to="/evening_dress">
+                        <Card.Body>
+                            <Card.Title className="summer__title">Вечернее платье</Card.Title>
+                            <Card.Text className="summer__price">
+                                1 365 р
+                            </Card.Text>
+                            <Card.Text className="summer__size">
+                                Размер: 42-50
+                            </Card.Text>
+                            <span>
+                            <svg width="162" height="16" viewBox="0 0 162 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.47" y="4" width="8" height="8" rx="4" fill="#73A39D"/>
+<rect opacity="0.47" x="20.8574" y="4" width="8" height="8" rx="4" fill="#84CC4C"/>
+<rect x="45.7148" y="4" width="8" height="8" rx="4" fill="#B5A8A1"/>
+<rect x="70.5723" y="4" width="8" height="8" rx="4" fill="#AB844A"/>
+<rect opacity="0.47" x="91.4277" y="4" width="8" height="8" rx="4" fill="#6977F0"/>
+<rect opacity="0.47" x="111.785" y="3.5" width="9" height="9" rx="4.5" fill="white" stroke="#D1D1D1"/>
+<rect opacity="0.47" x="133.143" y="4" width="8" height="8" rx="4" fill="#141414"/>
+<rect opacity="0.47" x="154" y="4" width="8" height="8" rx="4" fill="#FF0000"/>
+</svg>
+
+                        </span>
+                        </Card.Body>
+
+                    </Link>
+                </Card>
             </div>
+
+            <Pagination />
+
             <div className="novelty">
                 <h4>Новинки</h4>
                 <Card  className="novelty__card">

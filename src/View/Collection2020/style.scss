@@ -1,126 +1,160 @@
-.summer {
-  &__card {
-    display: inline-block;
-    margin: 18px 2px;
+.aboutCollection{
+  .main{
+    //background: #ECECEC;
+    margin: 50px 0;
+    //.flex{
+    //  display: flex;
+    //}
+    .media{
 
-  }
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+    }
+    .main__title{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
 
-  &__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
+      color: #393939;
+    }
+    .main__card{
+      transition: .5s;
+      margin: 15px 5px;
+      max-width: 280px;
+    }
+    .main__card:hover{
+      box-shadow: 0 5px 8px 5px rgba(33,33,33,.2);
 
-    text-align: justify;
+    }
+    .card_title{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 6px;
+      color: #393939;
+    }
+    .card_price{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
 
-    /* Text color/Primary */
+      color: #393939;
+      .old_price{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
 
-    color: #393939;
+        display: flex;
+        align-items: flex-end;
+        text-align: justify;
+        text-decoration-line: line-through;
 
-  }
-
-  &__price {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-
-    text-align: justify;
-
-    /* Text color/Primary */
-
-    color: #393939;
-  }
-
-  &__size {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    /* identical to box height */
-
-    text-align: justify;
-
-    /* Gray */
-
-    color: #7C7C7C;
-  }
-}
-
-
-
-.novelty {
-
-  &__card {
-    display: inline-block;
-
-    width: 226px;
-    height: 420px;
-    border: none;
-    margin: 20px 4px;
-  }
-  &__sale{
-    position: absolute;
-    top: 0;
-  }
-  &__favorite{
-    position: absolute;
-    top: 13px;
-    right: 12px;
-  }
-  &__body{
-    padding: 0;
-  }
-  &__price{
-    margin: 1px 0 8px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-
-    /* Color/Primary */
-
-    color: #1D1D1B;
-    span{
+        color: #ADADAD;
+      }
+    }
+    .card_info{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      margin:6px 0  10px 0;
+      color: #7C7C7C;
+    }
+    .more_btn{
       font-weight: 500;
       font-size: 13px;
       line-height: 16px;
-      margin-right: 8px;
-      /* identical to box height */
-
-      text-decoration-line: line-through;
-
-      /* Text color/Gray */
-
-      color: #979797;
-
+      padding: 8px 39px;
+      margin: 25px auto;
+      display: block;
+      text-align: center;
+      border: none;
+      background: #000;
+      color: #FFFFFF;
     }
   }
-  &__title{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
 
-    letter-spacing: 0.04em;
+  .novelty {
 
-    /* Text color/Primary */
+    &__card {
+      display: inline-block;
 
-    color: #393939;
-  }
-  &__size{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    /* identical to box height */
+      width: 226px;
+      height: 420px;
+      border: none;
+      margin: 20px 4px;
+    }
+    &__sale{
+      position: absolute;
+      top: 0;
+    }
+    &__favorite{
+      position: absolute;
+      top: 13px;
+      right: 12px;
+    }
+    &__body{
+      padding: 0;
+    }
+    &__price{
+      margin: 1px 0 8px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
 
-    text-align: justify;
 
-    /* Gray */
+      /* Color/Primary */
 
-    color: #7C7C7C;
+      color: #1D1D1B;
+      span{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        margin-right: 8px;
+        /* identical to box height */
+
+        text-decoration-line: line-through;
+
+        /* Text color/Gray */
+
+        color: #979797;
+
+      }
+    }
+    &__title{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      letter-spacing: 0.04em;
+
+      /* Text color/Primary */
+
+      color: #393939;
+    }
+    &__size{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      /* identical to box height */
+
+      text-align: justify;
+
+      /* Gray */
+
+      color: #7C7C7C;
+    }
   }
 }
+
+
+
+
+
+
 
 
 

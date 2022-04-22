@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Трикотажный топ в рубчик",
+    "subtitle": "Топы",
+    "images": [
+      "https://cdn.sela.ru/wa-data/public/shop/products/65/93/119365/images/171956/171956.932x1242.jpg",
+      "https://cdn.sela.ru/wa-data/public/shop/products/65/93/119365/images/171959/171959.932x1242.jpg",
+      "https://cdn.sela.ru/wa-data/public/shop/products/65/93/119365/images/171960/171960.932x1242.jpg"
+    ],
+    "colors": [
+      "#ece3b3",
+      "#f3bc02",
+      "#2754ac",
+      "#000000",
+      "#c8a2c8",
+      "c8a2c8",
+      "#ffffff"
+    ],
+    "price": 1690,
+    "old-price": 0,
+    "size": "xs s m l",
+    "description": "Трикотажный топ в рубчик\n\n- Прилегающий крой\n- Круглый вырез\n- Без рукавов\n- Однотонный дизайн\n\nНа модели представлен размер S.\nРост модели 175 см",
+    "material": "73% вискоза, 27% полиамид",
+    "article": "2804010608",
+    "quantity": 7,
+    "collection-id": "Коллекция Лето",
+    "is-hit": true,
+    "is-new": false,
+    "id": "3"
+  }
+]

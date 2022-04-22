@@ -22,6 +22,12 @@
   margin-bottom: 12px;
   color: #FFFFFF;
 }
+.footer__info .footer__svg {
+  margin-right: 7px;
+}
+.footer__info .mail {
+  margin-right: 9px;
+}
 .footer__rights {
   font-weight: 400;
   font-size: 14px;

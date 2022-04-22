@@ -1,15 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./style.css"
 import first_img from "../Collection2020/img/Rectangle 353.png"
 import second_img from "../Collection2020/img/Rectangle 491 (1).png"
 import {Button, Card} from "react-bootstrap";
+import axios from "axios";
 
-const EveningDress = () => {
+const AboutDress = () => {
+
+    const [products, setProducts] = useState([])
+
+
+    useEffect(() => {
+        axios(`https://613cea45270b96001798b2e8.mockapi.io/api/product`)
+            .then(({data}) => {
+                setProducts(data)
+            })
+    }, [])
+
+
+
+
     return (
         <div className="evening_dress container">
             <div className="row">
                 <div className="col-7">
                     <div className="top_section">
+                        
                         <img className="top__img" src={first_img} alt=""/>
                         <img className="top__img" src={second_img} alt=""/>
                         <img className="top__img" src={second_img} alt=""/>
@@ -91,4 +107,4 @@ const EveningDress = () => {
     );
 };
 
-export default EveningDress;
+export default AboutDress;

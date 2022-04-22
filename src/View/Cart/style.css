@@ -90,7 +90,6 @@
   margin-bottom: 12px;
 }
 .cart__line {
-  display: block;
   margin: 12px 0 24px 0;
 }
 .cart__btn {
@@ -98,7 +97,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
-  padding: 14px 107px;
+  padding: 14px 103px;
   background: #E5271B;
   border: none;
 }
